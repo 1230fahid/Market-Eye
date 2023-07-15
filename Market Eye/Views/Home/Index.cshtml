@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="home">
+    <img class="home-image" src="https://images.squarespace-cdn.com/content/v1/5b53605cb98a78268301276f/1585948047882-PZJSH736U2WP67F3VLY2/CURATED-Carillon-N2404_02.jpg?format=1500w" />
+    <div class="home-desc">
+        Here to help you manage your dreams
+        <br />
+        <a class="home-src" asp-controller="Home" asp-action="Registration">Get started today</a>
+    </div>
+    <section class="features">
+        <div class="feats"> 
+            <h3>Add to Watchlist</h3>
+            <hr />
+            <p>Create your own custom set of stocks to watch and analyze future predictions!</p>
+            <a asp-controller="Home" asp-action="Registration">Click to get started!</a>
+        </div>
+
+        <div class ="feats">
+            <h3>View Top Choices</h3>
+            <hr />
+            <p>Tired of looking for all the recent changes in the stock market?<br />
+            Sign up today to view the latest trends from various sources!</p>
+            <a asp-controller="Home" asp-action="Registration">Click to get started!</a>
+        </div>
+
+        <div class="feats">
+            <h3>Make a Subscription</h3>
+            <hr />
+            <p>Want to enable your own real-time notifications on future estimates? <br />
+            Get started here with a customizable email subscription!</p>
+            <a asp-controller="Home" asp-action="Registration">Click to get started!</a>
+        </div>
+    </section>
+
+    <!--<section class="section1">
+    </section>
+    <section class="section2">
+    </section>-->
+</div>
+

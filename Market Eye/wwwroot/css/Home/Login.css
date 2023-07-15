@@ -1,0 +1,114 @@
+﻿
+.login {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 600px;
+    background-image: url("https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsYWNrJTIwYmFja2dyb3VuZHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: cover;
+}
+
+.login-title {
+    margin-bottom: 10px;
+    text-align: center;
+    color: green;
+    font-weight: 200;
+    height: fit-content%;
+    margin-bottom: 7px;
+}
+
+.form-side {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-block {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    /*box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.4);*/
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-group {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.form-parms {
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.form-control {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: green;
+}
+
+.registration-link {
+    color: white;
+}
+
+.form-block:hover {
+    color: gold;
+}
+
+.login-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    width: 80%;
+    padding: 2%;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+#btn:hover {
+    border: 1px solid gold;
+    color: gold;
+}
+
+.login-input {
+    background-color: black;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid green;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    white-space: normal;
+    overflow: auto;
+}
+
+.login-label {
+    color:green;
+}
+
+.login-input:focus {
+    background-color: black;
+    color: green;
+    padding: 5px;
+    border: none;
+    border: 1px solid green;
+    white-space: normal;
+    overflow: auto;
+}
