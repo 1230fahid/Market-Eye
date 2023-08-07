@@ -13,7 +13,7 @@ from tensorflow.keras.layers import Dense
 
 conn = http.client.HTTPSConnection("alpha-vantage.p.rapidapi.com")
 headers = {
-    'X-RapidAPI-Key': "2d9682785bmsh125a8783b4d4e57p1db292jsnc2cd9580c1c8",
+    'X-RapidAPI-Key': "",
     'X-RapidAPI-Host': "alpha-vantage.p.rapidapi.com"
 }
 
@@ -24,7 +24,7 @@ data = res.read()
 
 conn = http.client.HTTPSConnection("alpha-vantage.p.rapidapi.com")
 headers = {
-    'X-RapidAPI-Key': "2d9682785bmsh125a8783b4d4e57p1db292jsnc2cd9580c1c8",
+    'X-RapidAPI-Key': "",
     'X-RapidAPI-Host': "alpha-vantage.p.rapidapi.com"
 }
 
