@@ -1,0 +1,118 @@
+﻿.watchlist {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: black;
+    align-items: center;
+}
+
+.watchlist-header {
+    margin-top: 5%;
+    color: white;
+    padding: 10px;
+    height: fit-content;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+}
+
+.watchlist-list {
+    margin-top: 5%;
+    height: 80%;
+    width: 85%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(123, 123, 123, 0.6);
+}
+
+.watchlist-row:hover {
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.watchlist-table {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.add-stock {
+    width: 15%;
+}
+
+.watchlist-th, .watchlist-td {
+    color: white;
+    border-right: 1px solid black;
+    padding: 0.01%;
+    text-align: center;
+    overflow:auto;
+}
+
+.watchlist-th {
+    border-bottom: 1px solid black;
+}
+
+.watchlist-th:nth-last-of-type(1), .watchlist-td:nth-last-of-type(1){
+    border-right: none;
+}
+
+.add-stock {
+    background-color: green;
+    color: white;
+    padding: 0.1%;
+    border: 1px solid green;
+}
+
+.add-stock:hover {
+    background-color: green;
+    color: black;
+    padding: 0.1%;
+    border: 1px solid black;
+}
+
+
+@media (max-width: 600px) {
+    .watchlist-th, .watchlist-td {
+        color: white;
+        border-right: 1px solid black;
+        padding: 0.01%;
+        text-align: center;
+        overflow: auto;
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 510px) {
+    .add-stock {
+        width: 15%;
+        font-size: smaller;
+    }
+
+    .nav-a {
+        margin-right: 10px;
+        color: white;
+        font-size: small;
+    }
+}
+
+@media (max-width: 460px) {
+    .watchlist-th, .watchlist-td {
+        color: white;
+        border-right: 1px solid black;
+        padding: 0.01%;
+        text-align: center;
+        overflow: auto;
+        font-size: x-small;
+    }
+    .add-stock {
+        width: 15%;
+        font-size: x-small;
+    }
+
+    .nav-a {
+        margin-right: 10px;
+        color: white;
+        font-size: smaller;
+    }
+}

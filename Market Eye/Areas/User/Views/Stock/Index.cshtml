@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@using MarketEye.Models;
+
+<section class="watchlist" id="wl">
+	<h1 class="watchlist-header">My Watchlist</h1>
+
+	<div class="watchlist-list" id="wl-l">
+		<table class="watchlist-table">
+			<thead>
+				<tr>
+					<th class="watchlist-th">Symbol</th>
+					<th class="watchlist-th">Name</th>
+					<th class="watchlist-th">Current Price</th>
+					<th class="watchlist-th">Predicted Open</th>
+					<th class="watchlist-th">Predicted High</th>
+					<th class="watchlist-th">Predicted Low</th>
+					<th class="watchlist-th">Predicted Close</th>
+					<th class="watchlist-th">Predicted Adj. Close</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(StockTrend stockTrend in Model)
+				{
+					<tr class="watchlist-row">
+						<td class="watchlist-td">@stockTrend.StockData.Symbol</td>
+						<td class="watchlist-td">@stockTrend.StockData.Name</td>
+						<td class="watchlist-td">@stockTrend.CurrentPrice</td>
+						<td class="watchlist-td">@stockTrend.StockData.PredictedOpen</td>
+						<td class="watchlist-td">@stockTrend.StockData.PredictedHigh</td>
+						<td class="watchlist-td">@stockTrend.StockData.PredictedLow</td>
+						<td class="watchlist-td">@stockTrend.StockData.PredictedClose</td>
+						<td class="watchlist-td">@stockTrend.StockData.PredictedAdjClose</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+		<button onclick="addStock()" class="add-stock" id="btn-stock">Add Stock</button>
+	</div>
+	<!--<div class="watchlist-block">
+	</div>-->
+</section>

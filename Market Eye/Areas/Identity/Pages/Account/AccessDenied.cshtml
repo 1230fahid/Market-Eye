@@ -1,0 +1,28 @@
+﻿@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access denied";
+}
+<!--
+<header>
+    <h1 class="text-danger">@ViewData["Title"]</h1>
+    <p class="text-danger">You do not have access to this resource.</p>
+</header>
+-->
+
+<section class="denied">
+    <div class="top-level-denied">
+        <div class="access-denied">
+            <h3 style="text-align:center;color:red;">ACCESS DENIED!</h3>
+            <hr style="color:lightgray;"/>
+            <div>
+                <p style="color:red;">You do not have the permissions to access this resource!</p>
+            </div>
+            <div>
+                <a asp-area="Identity" asp-page="/Account/Login">Login</a>
+                <br />
+                <a asp-area="Identity" asp-page="/Account/Register">Register</a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&family=Open+Sans&display=swap');
 
+.toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* Media query isn't shown here. */
+    font-size: var(--mobile-font-size);
+    font-weight: 300;
+    padding: 0;
+    /* Display at the top right of the container */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .registration {
     display: flex;
     flex-direction: row;
@@ -12,32 +26,6 @@
     width: 65%;
     height: 100%;
 }
-
-/*
-.register-form {
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    max-height: 100%;
-}
-
-.form-register {
-    height: 90%;
-    width: 90%;
-    background-color: black;
-    border-block: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 5px 10px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-.title {
-    font-family: 'Nunito Sans', 'Open Sans', sans-serif;
-}
-*/
 
 .register {
     width: 35%;
@@ -64,21 +52,49 @@
     margin-bottom: 5px;
 }
 
-.reg-input {
+.password {
+    display: flex;
+    flex-direction: row;
     background-color: black;
+    color: gray;
     width: 100%;
     border: none;
     border-bottom: 1px solid #E6BE8A;
     margin-bottom: 10px;
     white-space: normal;
+}
+
+.reg-input {
+    background-color: black;
+    color: gray;
+    width: 95%;
+    border: none;
+    white-space: normal;
     overflow: auto;
 }
 
-    .reg-input:focus {
+    .reg-input-email {
+        background-color: black;
         color: gray;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #E6BE8A;
+        margin-bottom: 10px;
         white-space: normal;
-        overflow: auto;
     }
+
+.vis-checkbox {
+    width: 5%;
+    color: #E6BE8A;
+}
+
+.reg-input:focus {
+    background-color: black;
+    color: gray;
+    white-space: normal;
+    border: none;
+    overflow: auto;
+}
 
 .reg-button {
     display: flex;
@@ -98,3 +114,4 @@
         color: black;
         transition-duration: 0.015s;
     }
+

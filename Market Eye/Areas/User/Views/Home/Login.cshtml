@@ -1,0 +1,24 @@
+﻿@{
+	Layout = "_Layout";
+}
+
+<section class="login">
+	<div class="form-side">
+		<div class="form-block">
+			<form class="login-form" style="height: 90%;">
+				<h1 class="login-title">Login</h1>
+				<div class="form-params">
+					<label class="login-label" for="#username">Username</label>
+					<input class="login-input" type="text" id="username" placeholder="Username" />
+					<label class="login-label" for="#password">Password</label>
+					<input class="login-input" type="text" id="password" placeholder="Password" />
+					<h4 style="text-align:end; color:white; text-decoration: underline; font-size: small;"><a class="registration-link" asp-area="User" asp-controller="Home" asp-action="Registration">Register here for an account</a></h4>
+					<br />
+					<div class="login-button">
+						<button type="submit" id="btn">Sign In</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
